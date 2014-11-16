@@ -112,7 +112,7 @@ static const int GRID_COLUMNS = 10;
 
 - (void)updateCreatures
 {
-    for (int i = 0; i < [_gridArray count]; i++)
+/*    for (int i = 0; i < [_gridArray count]; i++)
     {
         for (int j = 0; j < [_gridArray[i] count]; i++)
         {
@@ -126,13 +126,13 @@ static const int GRID_COLUMNS = 10;
 //                _totalAlive++;
             }
         }
-    }
+    }*/
 }
 
 - (void)evolveStep
 {
-    [self countNeighbors];
-    [self updateCreatures];
+//    [self countNeighbors];
+//    [self updateCreatures];
     _generation++;
 }
 
