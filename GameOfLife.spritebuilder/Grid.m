@@ -84,11 +84,10 @@ static const int GRID_COLUMNS = 10;
 {
     for (int i = 0; i < [_gridArray count]; i++)
     {
-        int gacount = [_gridArray[i] count];
-        NSLog(@"%d", gacount);
-        for (int j = 0; j < gacount; i++)
+//        int gacount = [_gridArray[i] count];
+        for (int j = 0; j < [_gridArray[i] count]; j++)
         {
-            /*
+//            /*
             Creature *currentCreature = _gridArray[i][j];
             currentCreature.livingNeighbors = 0;
             
@@ -109,7 +108,7 @@ static const int GRID_COLUMNS = 10;
                     }
                 }
             }
-             */
+//             */
         }
     }
 }
