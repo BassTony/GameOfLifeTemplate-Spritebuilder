@@ -49,7 +49,7 @@ static const int GRID_COLUMNS = 10;
             _gridArray[i][j] = creature;
             creature.isAlive = YES;
             
-            x+=_cellWidth;
+            x += _cellWidth;
             
         }
         y += _cellHeight;
@@ -82,7 +82,7 @@ static const int GRID_COLUMNS = 10;
 
 - (void)countNeighbors
 {
-    for (int i = 0; i < GRID_ROWS; i++)
+    for (int i = 0; i < GRID_ROWS-1; i++)
         //        for (int i = 0; i < [_gridArray count]; i++)
     {
         NSLog(@"i: %d", i);
