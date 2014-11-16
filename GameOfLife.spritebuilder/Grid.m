@@ -120,10 +120,10 @@ static const int GRID_COLUMNS = 10;
             if (currentCreature.isAlive && (currentCreature.livingNeighbors < 2 || currentCreature.livingNeighbors > 3))
             {
                 currentCreature.isAlive = NO;
-                _totalAlive--;
+//                _totalAlive--;
             } else if (!currentCreature.isAlive && currentCreature.livingNeighbors == 3) {
                 currentCreature.isAlive = YES;
-                _totalAlive++;
+//                _totalAlive++;
             }
         }
     }
