@@ -73,7 +73,7 @@ static const int GRID_COLUMNS = 10;
 - (BOOL)isIndexValidForX:(int)x andY:(int)y
 {
     BOOL isIndexValid = YES;
-    if(x < 0 || y < 0 || x >= GRID_ROWS || y >= GRID_COLUMNS)
+    if(x < 0 || y < 0 || y >= GRID_ROWS || x >= GRID_COLUMNS)
     {
         isIndexValid = NO;
     }
@@ -112,7 +112,7 @@ static const int GRID_COLUMNS = 10;
 
 - (void)updateCreatures
 {
-/*    for (int i = 0; i < [_gridArray count]; i++)
+    for (int i = 0; i < [_gridArray count]; i++)
     {
         for (int j = 0; j < [_gridArray[i] count]; i++)
         {
@@ -120,13 +120,13 @@ static const int GRID_COLUMNS = 10;
             if (currentCreature.isAlive && (currentCreature.livingNeighbors < 2 || currentCreature.livingNeighbors > 3))
             {
                 currentCreature.isAlive = NO;
-//                _totalAlive--;
+                _totalAlive--;
             } else if (!currentCreature.isAlive && currentCreature.livingNeighbors == 3) {
                 currentCreature.isAlive = YES;
-//                _totalAlive++;
+                _totalAlive++;
             }
         }
-    }*/
+    }
 }
 
 - (void)evolveStep
