@@ -82,7 +82,8 @@ static const int GRID_COLUMNS = 10;
 
 - (void)countNeighbors
 {
-    for (int i = 0; i < [_gridArray count]; i++)
+    for (int i = 0; i < 8; i++)
+//        for (int i = 0; i < [_gridArray count]; i++)
     {
 //        int gacount = [_gridArray[i] count];
         for (int j = 0; j < [_gridArray[i] count]; j++)
