@@ -133,8 +133,8 @@ static const int GRID_COLUMNS = 10;
 
 - (void)evolveStep
 {
-//    [self countNeighbors];
-    [self updateCreatures];
+    [self countNeighbors];
+//    [self updateCreatures];
     _generation++;
 }
 
