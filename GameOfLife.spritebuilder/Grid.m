@@ -82,11 +82,11 @@ static const int GRID_COLUMNS = 10;
 
 - (void)countNeighbors
 {
-    for (int i = 0; i < 7; i++)
+    for (int i = 0; i < GRID_ROWS; i++)
 //        for (int i = 0; i < [_gridArray count]; i++)
     {
 //        int gacount = [_gridArray[i] count];
-        for (int j = 0; j < [_gridArray[i] count]; j++)
+        for (int j = 0; j < GRID_COLUMNS; j++)
         {
 //            /*
             Creature *currentCreature = _gridArray[i][j];
