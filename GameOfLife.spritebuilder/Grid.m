@@ -84,9 +84,9 @@ static const int GRID_COLUMNS = 10;
 {
     for (int i = 0; i < [_gridArray count]; i++)
     {
-        /*
         for (int j = 0; j < [_gridArray[i] count]; i++)
         {
+            /*
             Creature *currentCreature = _gridArray[i][j];
             currentCreature.livingNeighbors = 0;
             
@@ -107,8 +107,8 @@ static const int GRID_COLUMNS = 10;
                     }
                 }
             }
+             */
         }
-         */
     }
 }
 
